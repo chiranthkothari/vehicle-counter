@@ -1,0 +1,61 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+#hero{
+	width: 100%;
+}
+.firstRow{
+	width: 66%;
+	height: 19vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.top-pad{
+	margin-top: 15px;
+}
+.cell1{
+	float: left;
+    width: 50%;
+}
+.icon{
+	width: 80%;
+	border-width: 0px;
+}
+
+.secondRow{
+	margin-bottom: 150px;
+}
+.cell2{
+	width: 33%;
+	float: left;
+}
+input {
+	font-size: 1.2em;
+	background-color: transparent;
+	text-align: center;
+	border-width: 0;
+	width: 100%;
+	color: black;
+}
+button{
+	border-width: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+h4{
+	margin-top: -5px;
+	color: grey;
+}
+.categoryName{
+	margin-bottom: -1px;
+	color: grey;
+}
+.spanClass{
+	background-color: grey;
+	color: white;
+	border-radius: 1px;
+	padding: 2px 5px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Vehicle Counter</title>
+</head>
+<body>
+	<section id="hero">
+		<div class="container text-center">
+			<div class="firstRow top-pad">
+				<div class="cell1 text-center">
+					<h5 class="categoryName">Car</h5>
+					<button onclick="carCalc()"><img src="assets/img/svg/automobile-1.svg" class="icon"></button>
+					<h4 ><span id="carStart" class="spanClass">0</span></h4>
+				</div>
+				<div class="cell1">
+					<h5 class="categoryName">Motorcycle</h5>
+					<button onclick="bikeCalc()"><img src="assets/img/svg/motor-sports.svg" class="icon"></button>
+					<h4 ><span id="bikeStart" class="spanClass">0</span></h4>
+				</div>
+			</div>
+			<div class="secondRow">
+				<div class="cell2">
+					<h5 class="categoryName">Bus</h5>
+					<button onclick="busCalc()"><img src="assets/img/svg/buses.svg" class="icon"></button>
+					<h4 ><span id="busStart" class="spanClass">0</span></h4>
+				</div>
+				<div class="cell2">
+					<h5 class="categoryName">Truck</h5>
+					<button onclick="truckCalc()"><img src="assets/img/svg/delivery-truck-1.svg" class="icon"></button>
+					<h4 ><span id="truckStart" class="spanClass">0</span></h4>
+				</div>
+				<div class="cell2">
+					<h5 class="categoryName">Rickshaw</h5>
+					<button onclick="autoCalc()"><img src="assets/img/svg/auto.png" class="icon"></button>
+					<h4 ><span id="autoStart" class="spanClass">0</span></h4>
+				</div>
+			</div>
+			<div class="firstRow">
+				<div class="cell1">
+					<h5 class="categoryName">Bicycle/ Cart</h5>
+					<button onclick="cycCalc()"><img src="assets/img/svg/cycle.svg" class="icon"></button>
+					<h4 ><span id="cycStart" class="spanClass">0</span></h4>
+				</div>
+				<div class="cell1">
+					<h5 class="categoryName">Other</h5>
+					<button onclick="otherCalc()"><img src="assets/img/svg/excavate.svg" class="icon"></button>
+					<h4 ><span id="otherStart" class="spanClass">0</span></h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+		function carCalc(){
+			var a= Number(document.getElementById('carStart').textContent);
+			a++;
+			document.getElementById('carStart').innerHTML= a;
+		}
+
+		function bikeCalc(){
+			var a= Number(document.getElementById('bikeStart').textContent);
+			a++;
+			document.getElementById('bikeStart').innerHTML= a;
+		}
+
+		function busCalc(){
+			var a= Number(document.getElementById('busStart').textContent);
+			a++;
+			document.getElementById('busStart').innerHTML= a;
+		}
+
+		function truckCalc(){
+			var a= Number(document.getElementById('truckStart').textContent);
+			a++;
+			document.getElementById('truckStart').innerHTML= a;
+		}
+
+		function autoCalc(){
+			var a= Number(document.getElementById('autoStart').textContent);
+			a++;
+			document.getElementById('autoStart').innerHTML= a;
+		}
+
+		function cycCalc(){
+			var a= Number(document.getElementById('cycStart').textContent);
+			a++;
+			document.getElementById('cycStart').innerHTML= a;
+		}
+
+		function otherCalc(){
+			var a= Number(document.getElementById('otherStart').textContent);
+			a++;
+			document.getElementById('otherStart').innerHTML= a;
+		}
+
+	</script>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106934834-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments)};
+		gtag('js', new Date());
+
+		gtag('config', 'UA-106934834-1');
+	</script>
+
+</body>
+</html>
